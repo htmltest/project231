@@ -7,6 +7,31 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css" />
 
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+        <meta name="application-name" content="Maxus">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+        <meta name="msapplication-square70x70logo" content="favicons/mstile-70x70.png">
+        <meta name="msapplication-square150x150logo" content="favicons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo" content="favicons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo" content="favicons/mstile-310x310.png">
+
+        <script>
+            var faviconImages = [
+                'favicons/favicon-change-1.png',
+                'favicons/favicon-change-2.png',
+                'favicons/favicon-change-3.png',
+                'favicons/favicon-change-4.png',
+            ];
+        </script>
+
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width">
     </head>
@@ -22,7 +47,6 @@
                         <div class="header-container">
                             <div class="logo"><a href="#"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></a></div>
                             <div class="header-right">
-                                <a href="#" class="header-search-link"><svg><use xlink:href="images/sprite.svg#icon-search"></use></svg></a>
                                 <a href="#" class="header-nav-link"><svg><use xlink:href="images/sprite.svg#header-nav-link"></use></svg></a>
                             </div>
                         </div>
@@ -177,10 +201,8 @@
                         </div>
 
                         <div class="footer-text">
-                            <p>MARK OF&nbsp;PHARMLINE LLC, (UK) (WH1)</p>
-                            <p>Все права защищены &copy;&nbsp;Maxus 2020</p>
-                            <p><a href="#">Политика конфиденциальности</a></p>
-                            <p><a href="#">Полезная информация</a></p>
+                            <p>&copy; MAXUS<sup class="reg">&reg;</sup> All Rights Reserved</p>
+                            <p>QUANTUM SOLUTIONS GROUP LTD owns exclusive rights of&nbsp;a&nbsp;trademark and brand identity of&nbsp;the Maxus<sup class="reg">&reg;</sup> brand.</p>
                         </div>
 
                     </div>
@@ -189,6 +211,23 @@
 
         </div>
         <!-- wrapper END -->
+
+        <div class="window">
+            <div class="window-container">
+                <div class="window-age">
+                    <div class="window-age-logo"><svg><use xlink:href="images/sprite.svg#logo-with-title"></use></svg></div>
+                    <div class="window-age-text">Просмотр материалов данного сайта предназначен исключительно для совершеннолетних лиц. Если вам не&nbsp;исполнилось 18&nbsp;лет, просим немедленно покинуть сайт!</div>
+                    <div class="window-age-title">Тебе уже 18 ?</div>
+                    <div class="window-age-btns">
+                        <a href="#" class="btn window-age-yes"><span>Да</span></a>
+                        <a href="https://yandex.ru" class="window-age-no"><span>Нет</span></a>
+                    </div>
+                    <div class="form-checkbox">
+                        <label><input type="checkbox" name="remember" checked><span>Запомнить меня</span></label>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script>
             var pathTemplate = './';
@@ -202,6 +241,7 @@
         <script src="js/swiper/swiper-bundle.min.js"></script>
         <script src="js/validation/jquery.validate.min.js"></script>
         <script src="js/validation/messages_ru.js"></script>
+        <script src="js/jquery.cookie.js"></script>
         <script src="js/tools.js"></script>
 
     </body>

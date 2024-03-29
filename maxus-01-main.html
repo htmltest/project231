@@ -15,11 +15,6 @@
         <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
         <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
-        <link rel="icon" type="image/png" href="favicons/favicon-196x196.png" sizes="196x196">
-        <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
-        <link rel="icon" type="image/png" href="favicons/favicon-128.png" sizes="128x128">
         <meta name="application-name" content="Maxus">
         <meta name="msapplication-TileColor" content="#FFFFFF">
         <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
@@ -27,6 +22,15 @@
         <meta name="msapplication-square150x150logo" content="favicons/mstile-150x150.png">
         <meta name="msapplication-wide310x150logo" content="favicons/mstile-310x150.png">
         <meta name="msapplication-square310x310logo" content="favicons/mstile-310x310.png">
+
+        <script>
+            var faviconImages = [
+                'favicons/favicon-change-1.png',
+                'favicons/favicon-change-2.png',
+                'favicons/favicon-change-3.png',
+                'favicons/favicon-change-4.png',
+            ];
+        </script>
 
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width">
@@ -43,7 +47,6 @@
                         <div class="header-container">
                             <div class="logo"><svg><use xlink:href="images/sprite.svg#logo"></use></svg></div>
                             <div class="header-right">
-                                <a href="#" class="header-search-link"><svg><use xlink:href="images/sprite.svg#icon-search"></use></svg></a>
                                 <a href="#" class="header-nav-link"><svg><use xlink:href="images/sprite.svg#header-nav-link"></use></svg></a>
                             </div>
                         </div>
@@ -105,6 +108,15 @@
                     <div class="main">
                         <div class="main-welcome-bg animated"></div>
 
+                        <div class="main-screen-1"></div>
+                        <div class="main-screen-2"></div>
+                        <div class="main-screen-3"></div>
+                        <div class="main-screen-4"></div>
+                        <div class="main-screen-5"></div>
+                        <div class="main-screen-6"></div>
+                        <div class="main-screen-7"></div>
+                        <div class="main-screen-8"></div>
+
                         <div class="main-welcome">
                             <div class="container">
                                 <div class="main-welcome-text-top"><span>Максимум</span> разнообразия</div>
@@ -139,6 +151,9 @@
                             <div class="main-welcome-blister-4-09"><img src="images/main-screen-4-blister-09.png" alt=""></div>
                             <div class="main-welcome-blister-4-10"><img src="images/main-screen-4-blister-10.png" alt=""></div>
                             <div class="main-welcome-blister-4-11"><img src="images/main-screen-4-blister-11.png" alt=""></div>
+                        </div>
+
+                        <div class="main-welcome-blisters-4-big">
                             <div class="main-welcome-blister-4-00"><img src="images/main-screen-4-blister.png" alt=""></div>
                         </div>
 
@@ -173,17 +188,10 @@
                             </div>
                         </div>
 
-                        <div class="main-screen-1"></div>
-                        <div class="main-screen-2"></div>
-                        <div class="main-screen-3"></div>
-                        <div class="main-screen-4"></div>
-                        <div class="main-screen-5"></div>
-                        <div class="main-screen-6"></div>
-                        <div class="main-screen-7"></div>
-                        <div class="main-screen-8"></div>
-
                         <!-- main catalogue -->
                         <div class="main-catalogue">
+                            <div class="main-catalogue-circle"></div>
+
                             <div class="main-catalogue-title">Продукты</div>
 
                             <!-- catalogue -->
@@ -204,7 +212,7 @@
                                         <div class="catalogue-item-bg" style="background-image:url(files/catalogue-thin-bg.svg)"></div>
                                         <div class="catalogue-item-preview"><img src="files/catalogue-thin.png" alt=""></div>
                                         <div class="catalogue-item-text">
-                                            <div class="catalogue-item-title"><span style="background:#CA1925"></span>Ultra-Thin</div>
+                                            <div class="catalogue-item-title"><span style="background:#CA1925"></span>Ultra Thin</div>
                                             <div class="catalogue-item-anonce">Более 250 коллекционных блистеров. Собери любимую коллекцию.</div>
                                         </div>
                                     </a>
@@ -296,6 +304,8 @@
 
                         <!-- main bottom -->
                         <div class="main-bottom">
+                            <div class="main-bottom-background"></div>
+                            <div class="main-bottom-background-black"></div>
                             <div class="main-bottom-inner">
 
                                 <!-- main slots -->
@@ -304,11 +314,10 @@
                                     <script>
                                         var slotsResults = [
                                             'Удача на&nbsp;твоей стороне',
-                                            'Никогда не повторяйся',
-                                            'Третий вариант текста',
-                                            'Четвертый вариант текста',
-                                            'Пятый вариант текста',
-                                            'Шестой вариант текста'
+                                            'Никогда не&nbsp;повторяйся',
+                                            'Везёт тому, кто действует',
+                                            'Будь непредсказуем',
+                                            'Страсть не&nbsp;терпит шаблонов'
                                         ];
                                     </script>
                                     <script src="js/collections.js"></script>
@@ -471,60 +480,127 @@
                                         <div class="faq-menu"></div>
                                         <div class="faq-tabs">
                                             <!-- faq tab -->
-                                            <div class="faq-tab" data-title="Презервативы">
+                                            <div class="faq-tab" data-title="Частые вопросы">
                                                 <div class="faq-item">
-                                                    <div class="faq-item-title">Латексные презервативы Maxus с&nbsp;гипоаллергенной</div>
-                                                    <div class="faq-item-text">Взрывной темперамент, достоинство в&nbsp;сдержанности, монументальный и&nbsp;броский, но&nbsp;ни&nbsp;на&nbsp;что не&nbsp;похожий облик&nbsp;&mdash; таков британский характер, присущий MAXUS<sup class="reg">&reg;</sup>.</div>
+                                                    <div class="faq-item-title">Сколько разных коллекций блистеров есть у&nbsp;MAXUS?</div>
+                                                    <div class="faq-item-text">В&nbsp;коллекции MAXUS более 250 дизайнов блистеров и&nbsp;они постоянно обновляются. Сегодня в&nbsp;продаже есть следующие коллекции: British Edition Sport, Arthouse, Technical, I&rsquo;m Sorry Mom, British Edition Mixed, Sexy Food, Web Cam и&nbsp;Pin-Up. Вам могут попасться случайные дизайны блистеров из&nbsp;разных коллекций в&nbsp;упаковке. Попробуйте собрать их&nbsp;все.</div>
                                                     <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
                                                 </div>
                                                 <div class="faq-item">
-                                                    <div class="faq-item-title">Взрывной темперамент, достоинство</div>
-                                                    <div class="faq-item-text">Взрывной темперамент, достоинство в&nbsp;сдержанности, монументальный и&nbsp;броский, но&nbsp;ни&nbsp;на&nbsp;что не&nbsp;похожий облик&nbsp;&mdash; таков британский характер, присущий MAXUS<sup class="reg">&reg;</sup>.</div>
+                                                    <div class="faq-item-title">Из&nbsp;чего сделан кейс MAXUS?</div>
+                                                    <div class="faq-item-text">Кейс металлический. В&nbsp;коллекции&nbsp;&mdash; более 20&nbsp;цветов, и&nbsp;при покупке вам может попасться абсолютно любой.</div>
                                                     <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
                                                 </div>
                                                 <div class="faq-item">
-                                                    <div class="faq-item-title">Таков британский характер, присущий MAXUS</div>
-                                                    <div class="faq-item-text">Взрывной темперамент, достоинство в&nbsp;сдержанности, монументальный и&nbsp;броский, но&nbsp;ни&nbsp;на&nbsp;что не&nbsp;похожий облик&nbsp;&mdash; таков британский характер, присущий MAXUS<sup class="reg">&reg;</sup>.</div>
+                                                    <div class="faq-item-title">Почему все так любят презервативы MAXUS?</div>
+                                                    <div class="faq-item-text">Презервативы MAXUS обеспечивают комфортную посадку и&nbsp;ощущение, максимально приближенное к&nbsp;естественному половому акту. Разнообразные размерные и&nbsp;текстурные решения, уникальные формы и&nbsp;ароматические добавки в&nbsp;линейке MAXUS создавались с&nbsp;учетом мнения пользователей по&nbsp;всему миру. Вы&nbsp;можете наслаждаться максимально яркими ощущениями, зная, что используете презерватив, который был протестирован в&nbsp;соответствии с&nbsp;международными стандартами.</div>
                                                     <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
                                                 </div>
                                                 <div class="faq-item">
-                                                    <div class="faq-item-title">Взрывной темперамент, достоинство</div>
-                                                    <div class="faq-item-text">Взрывной темперамент, достоинство в&nbsp;сдержанности, монументальный и&nbsp;броский, но&nbsp;ни&nbsp;на&nbsp;что не&nbsp;похожий облик&nbsp;&mdash; таков британский характер, присущий MAXUS<sup class="reg">&reg;</sup>.</div>
+                                                    <div class="faq-item-title">Как следует хранить презервативы MAXUS?</div>
+                                                    <div class="faq-item-text">Наши презервативы следует хранить при температуре от&nbsp;0&deg;&nbsp;до&nbsp;25&deg;C&nbsp;в сухом прохладном месте вдали от&nbsp;прямых солнечных лучей и&nbsp;тепла. Идеальное место&nbsp;&mdash; металлический кейс MAXUS.</div>
                                                     <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
                                                 </div>
                                                 <div class="faq-item">
-                                                    <div class="faq-item-title">Таков британский характер, присущий MAXUS</div>
-                                                    <div class="faq-item-text">Взрывной темперамент, достоинство в&nbsp;сдержанности, монументальный и&nbsp;броский, но&nbsp;ни&nbsp;на&nbsp;что не&nbsp;похожий облик&nbsp;&mdash; таков британский характер, присущий MAXUS<sup class="reg">&reg;</sup>.</div>
+                                                    <div class="faq-item-title">Бывают&nbsp;ли презервативы MAXUS разных размеров?</div>
+                                                    <div class="faq-item-text">Да. Мы&nbsp;предлагаем презервативы нескольких размеров. Большинство презервативов MAXUS&nbsp;&mdash; классического размера 180&nbsp;&times;&nbsp;53&nbsp;мм. Так&nbsp;же в&nbsp;линейке презервативов есть презервативы увеличенного размера (XXL) 200&nbsp;&times;&nbsp;60&nbsp;мм, презервативы в&nbsp;форме &laquo;двойная спираль&raquo; (G-SPOT) 180&nbsp;&times;&nbsp;54&nbsp;мм и&nbsp;в&nbsp;форме &laquo;факел&raquo; (SENSUAL) 190&nbsp;&times;&nbsp;56&nbsp;мм. Мы&nbsp;уверены, что вы&nbsp;найдете&nbsp;то, что вам подойдет идеально.</div>
+                                                    <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
+                                                </div>
+                                                <div class="faq-item">
+                                                    <div class="faq-item-title">Какой презерватив MAXUS мне подходит?</div>
+                                                    <div class="faq-item-text">Это зависит от&nbsp;того, какие ощущения вы&nbsp;хотите получить сегодня. Наш самый тонкий презерватив 003&nbsp;&mdash; имеет толщину стенки всего 0,03&nbsp;мм и&nbsp;обеспечивает максимально естественные ощущения. В&nbsp;нашей линейке есть презервативы с&nbsp;точечно-ребристой текстурой, увеличенного размера, ароматизированные и&nbsp;презервативы уникальных форм &laquo;двойная спираль&raquo; и&nbsp;&laquo;факел&raquo;, которые разработаны с&nbsp;учётом особенностей его и&nbsp;её&nbsp;тела для дополнительной стимуляции. Не&nbsp;уверены, какой выбрать? Возьмите микс-набор или 2-3 разные упаковки по&nbsp;3&nbsp;штуки и&nbsp;попробуйте несколько разных вариантов уже сегодня!</div>
+                                                    <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
+                                                </div>
+                                                <div class="faq-item">
+                                                    <div class="faq-item-title">Как мне отличить презервативы MAXUS друг от&nbsp;друга?</div>
+                                                    <div class="faq-item-text">Это сделать довольно просто: на&nbsp;обратной стороне блистера написан вид презерватива, который находится внутри. Например: классические&nbsp;&mdash; classical, точечно-ребристые&nbsp;&mdash; dots &amp;&nbsp;ribs, ультратонкие&nbsp;&mdash; ultra thin, ароматизированные&nbsp;&mdash; mixed fruit и&nbsp;т.д. В&nbsp;партиях, выпускаемых с&nbsp;2023 года для лучшей идентификации вы&nbsp;можете встретить уже цветные задники. Например: классические&nbsp;&mdash; пыльно-розовый цвет и&nbsp;изображение губ, точечно-ребристые&nbsp;&mdash; жёлтый цвет и&nbsp;изображение кружков и&nbsp;точек, ультратонкие&nbsp;&mdash; фиолетовый и&nbsp;изображение пера, и&nbsp;т.д. Обратите внимание, что презервативы толщиной 0,03&nbsp;мм имеют серебристый задник блистера, изображение пузыря и&nbsp;буквы CE.</div>
+                                                    <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
+                                                </div>
+                                                <div class="faq-item">
+                                                    <div class="faq-item-title">Используется&nbsp;ли смазка в&nbsp;презервативах MAXUS?</div>
+                                                    <div class="faq-item-text">Да. Мы&nbsp;используем обильное количество гипоаллергенной смазки, но&nbsp;это не&nbsp;мешает вам использовать дополнительные лубриканты для большего удовольствия. </div>
+                                                    <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
+                                                </div>
+                                                <div class="faq-item">
+                                                    <div class="faq-item-title">Могу&nbsp;ли я&nbsp;использовать дополнительную смазку с&nbsp;презервативами MAXUS?</div>
+                                                    <div class="faq-item-text">Да. Несмотря на&nbsp;то, что презервативы MAXUS уже обладают обильной смазкой, нет ничего плохого в&nbsp;том, чтобы добавить еще! Используйте дополнительную смазку только на&nbsp;силиконовой или водно-силиконовой основе! Не&nbsp;используйте смазку и&nbsp;лубриканты на&nbsp;масляной основе&nbsp;&mdash; это может нарушить целостность презерватива. </div>
+                                                    <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
+                                                </div>
+                                                <div class="faq-item">
+                                                    <div class="faq-item-title">Могу&nbsp;ли я&nbsp;использовать презервативы с&nbsp;различными вкусами как для орального, так и&nbsp;для вагинального секса?</div>
+                                                    <div class="faq-item-text">Презервативы MAXUS EXOTIC&nbsp;MIX&nbsp;со ароматизированными добавками созданы в&nbsp;первую очередь для вагинального секса. Тем не&nbsp;менее вы&nbsp;можете использовать их&nbsp;и&nbsp;для орального секса, это безопасно. Однако, мы&nbsp;рекомендуем для орального и&nbsp;вагинального секса пользоваться двумя разными презервативами.</div>
+                                                    <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
+                                                </div>
+                                                <div class="faq-item">
+                                                    <div class="faq-item-title">Безопасны&nbsp;ли ваши цветные и&nbsp;ароматизированные презервативы EXOTIC&nbsp;MIX для орального секса?</div>
+                                                    <div class="faq-item-text">Да. Мы&nbsp;используем пищевые ароматизаторы, а&nbsp;наши смазочные материалы изготовлены из&nbsp;безопасных для употребления ингредиентов. Однако, мы&nbsp;рекомендуем использовать новый презерватив каждый раз, когда вы&nbsp;переключаетесь между оральным, вагинальным или анальным половым актом.</div>
+                                                    <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
+                                                </div>
+                                                <div class="faq-item">
+                                                    <div class="faq-item-title">Безопасны&nbsp;ли ваши презервативы для использования во&nbsp;время анального секса?</div>
+                                                    <div class="faq-item-text">Да. Все наши презервативы, включая презервативы уникального рельефа, формы и&nbsp;размера, подходят для использования во&nbsp;время анального секса. Для лучшего комфорта и&nbsp;безопасности рекомендуем использовать большое количество смазки на&nbsp;водно-силиконовой основе.</div>
+                                                    <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
+                                                </div>
+                                                <div class="faq-item">
+                                                    <div class="faq-item-title">Из&nbsp;чего изготовлены презервативы MAXUS?</div>
+                                                    <div class="faq-item-text">Презервативы MAXUS изготавливаются из&nbsp;ультрапремиального латекса, который проходит тщательную пятиступенчатую проверку перед выпуском готовой продукции.</div>
+                                                    <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
+                                                </div>
+                                                <div class="faq-item">
+                                                    <div class="faq-item-title">Как MAXUS проверяет качество своих презервативов?</div>
+                                                    <div class="faq-item-text">
+                                                        <p>Каждый презерватив MAXUS проверяется электроникой на&nbsp;соответствие стандартам.</p>
+                                                        <p>Кроме того, случайным образом выбранные образцы из&nbsp;каждой партии проверяются специальным тестом на&nbsp;максимальное растяжение.</p>
+                                                        <p>После этого, образцы продуваются сильным напором воздуха, чтобы проверить их&nbsp;на&nbsp;прочность и&nbsp;эластичность. (Презервативы MAXUS выдерживают нагрузку до&nbsp;40&nbsp;литров воздуха без повреждений).</p>
+                                                        <p>Далее следует &laquo;водный&raquo; тест, исключающий возможность протечки. Презервативы наполняют водой, оставляют заполненными в&nbsp;течение одной минуты и&nbsp;затем прокатывают по&nbsp;специальной бумаге, на&nbsp;которой видно даже малейшее протекание.</p>
+                                                        <p>Каждый месяц на&nbsp;фабриках MAXUS проводится около двух миллионов таких тестов.</p>
+                                                        <p>Если хотя&nbsp;бы один экземпляр не&nbsp;прошел испытание, вся партия снимается с&nbsp;конвейера!</p>
+                                                    </div>
+                                                    <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
+                                                </div>
+                                                <div class="faq-item">
+                                                    <div class="faq-item-title">Являются&nbsp;ли презервативы на&nbsp;100% эффективной защитой от&nbsp;ИППП и&nbsp;беременности?</div>
+                                                    <div class="faq-item-text">Ни&nbsp;один метод контрацепции никогда не&nbsp;будет эффективным на&nbsp;100%. Но&nbsp;при правильном использовании презервативы обеспечивают наилучшую защиту от&nbsp;ИППП и&nbsp;на&nbsp;98% эффективны в&nbsp;предотвращении беременности. Правильный выбор презерватива, меры предосторожности и&nbsp;использование дополнительных лубрикантов (на&nbsp;силиконовой или водно-силиконовой основе) могут еще больше увеличить безопасность полового акта.</div>
+                                                    <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
+                                                </div>
+                                                <div class="faq-item">
+                                                    <div class="faq-item-title">Действительно&nbsp;ли более тонкие презервативы чаще рвутся?</div>
+                                                    <div class="faq-item-text">Нет. На&nbsp;самом деле толщина презерватива и&nbsp;безопасность его использования никак не&nbsp;связаны.</div>
+                                                    <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
+                                                </div>
+                                                <div class="faq-item">
+                                                    <div class="faq-item-title">Какой срок хранения у&nbsp;презервативов MAXUS?</div>
+                                                    <div class="faq-item-text">Пять лет. Но, насколько мы&nbsp;знаем, ни&nbsp;один из&nbsp;них столько не&nbsp;пролежал без дела, ведь все их&nbsp;настолько любят, что начинают использовать чаще и&nbsp;чаще, и&nbsp;чаще...</div>
+                                                    <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
+                                                </div>
+                                                <div class="faq-item">
+                                                    <div class="faq-item-title">Из&nbsp;чего сделаны презервативы MAXUS?</div>
+                                                    <div class="faq-item-text">Все презервативы MAXUS изготовлены из&nbsp;натурального ультрапремиального латекса и&nbsp;дарят максимальное наслаждение и&nbsp;бескрайнюю гамму ощущений для него и&nbsp;для неё.</div>
+                                                    <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
+                                                </div>
+                                                <div class="faq-item">
+                                                    <div class="faq-item-title">Имеют&nbsp;ли презервативы MAXUS запах резины или другой неприятный запах?</div>
+                                                    <div class="faq-item-text">Одна из&nbsp;особенностей, которая больше всего нравится пользователям MAXUS&nbsp;&mdash; они не&nbsp;имеют запаха резины или любого другого неприятного и&nbsp;неестественного запаха.</div>
                                                     <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
                                                 </div>
                                             </div>
                                             <!-- faq tab END -->
 
                                             <!-- faq tab -->
-                                            <div class="faq-tab" data-title="Лубриканты">
+                                            <div class="faq-tab" data-title="Как купить">
                                                 <div class="faq-item">
-                                                    <div class="faq-item-title">Взрывной темперамент, достоинство</div>
-                                                    <div class="faq-item-text">Взрывной темперамент, достоинство в&nbsp;сдержанности, монументальный и&nbsp;броский, но&nbsp;ни&nbsp;на&nbsp;что не&nbsp;похожий облик&nbsp;&mdash; таков британский характер, присущий MAXUS<sup class="reg">&reg;</sup>.</div>
+                                                    <div class="faq-item-title">Где я&nbsp;могу купить презервативы MAXUS?</div>
+                                                    <div class="faq-item-text">Вы&nbsp;можете найти нас на&nbsp;Wildberries, OZON или Мегамаркет или посетить одну из&nbsp;розничных сетей и&nbsp;аптек, интим-шопов или маркетов, которые продают презервативы MAXUS.</div>
                                                     <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
                                                 </div>
                                                 <div class="faq-item">
-                                                    <div class="faq-item-title">Таков британский характер, присущий MAXUS</div>
-                                                    <div class="faq-item-text">Взрывной темперамент, достоинство в&nbsp;сдержанности, монументальный и&nbsp;броский, но&nbsp;ни&nbsp;на&nbsp;что не&nbsp;похожий облик&nbsp;&mdash; таков британский характер, присущий MAXUS<sup class="reg">&reg;</sup>.</div>
+                                                    <div class="faq-item-title">Продукция MAXUS приходит в&nbsp;анонимной упаковке при покупке через маркетплейс?</div>
+                                                    <div class="faq-item-text">Да. Товар приходит в&nbsp;непрозрачной полиэтиленовой упаковке, а&nbsp;этикетка на&nbsp;упаковке &mdash;без наименования товара. Никто не&nbsp;сможет сказать, что находится в&nbsp;упаковке.</div>
                                                     <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
                                                 </div>
                                                 <div class="faq-item">
-                                                    <div class="faq-item-title">Латексные презервативы Maxus с&nbsp;гипоаллергенной</div>
-                                                    <div class="faq-item-text">Взрывной темперамент, достоинство в&nbsp;сдержанности, монументальный и&nbsp;броский, но&nbsp;ни&nbsp;на&nbsp;что не&nbsp;похожий облик&nbsp;&mdash; таков британский характер, присущий MAXUS<sup class="reg">&reg;</sup>.</div>
-                                                    <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
-                                                </div>
-                                            </div>
-                                            <!-- faq tab END -->
-
-                                            <!-- faq tab -->
-                                            <div class="faq-tab" data-title="Секс-игрушки">
-                                                <div class="faq-item">
-                                                    <div class="faq-item-title">Таков британский характер, присущий MAXUS</div>
-                                                    <div class="faq-item-text">Взрывной темперамент, достоинство в&nbsp;сдержанности, монументальный и&nbsp;броский, но&nbsp;ни&nbsp;на&nbsp;что не&nbsp;похожий облик&nbsp;&mdash; таков британский характер, присущий MAXUS<sup class="reg">&reg;</sup>.</div>
+                                                    <div class="faq-item-title">Потребуются&nbsp;ли мне какие-то документы при получении покупки через маркетплейс?</div>
+                                                    <div class="faq-item-text">Нет. Никаких документов предоставлять не&nbsp;нужно. MAXUS за&nbsp;безопасный секс и&nbsp;максимальное удовольствие для каждого.</div>
                                                     <svg><use xlink:href="images/sprite.svg#faq-arrow"></use></svg>
                                                 </div>
                                             </div>
@@ -593,10 +669,8 @@
                         </div>
 
                         <div class="footer-text">
-                            <p>MARK OF&nbsp;PHARMLINE LLC, (UK) (WH1)</p>
-                            <p>Все права защищены &copy;&nbsp;Maxus 2020</p>
-                            <p><a href="#">Политика конфиденциальности</a></p>
-                            <p><a href="#">Полезная информация</a></p>
+                            <p>&copy; MAXUS<sup class="reg">&reg;</sup> All Rights Reserved</p>
+                            <p>QUANTUM SOLUTIONS GROUP LTD owns exclusive rights of&nbsp;a&nbsp;trademark and brand identity of&nbsp;the Maxus<sup class="reg">&reg;</sup> brand.</p>
                         </div>
 
                     </div>
@@ -605,6 +679,23 @@
 
         </div>
         <!-- wrapper END -->
+
+        <div class="window">
+            <div class="window-container">
+                <div class="window-age">
+                    <div class="window-age-logo"><svg><use xlink:href="images/sprite.svg#logo-with-title"></use></svg></div>
+                    <div class="window-age-text">Просмотр материалов данного сайта предназначен исключительно для совершеннолетних лиц. Если вам не&nbsp;исполнилось 18&nbsp;лет, просим немедленно покинуть сайт!</div>
+                    <div class="window-age-title">Тебе уже 18 ?</div>
+                    <div class="window-age-btns">
+                        <a href="#" class="btn window-age-yes"><span>Да</span></a>
+                        <a href="https://yandex.ru" class="window-age-no"><span>Нет</span></a>
+                    </div>
+                    <div class="form-checkbox">
+                        <label><input type="checkbox" name="remember" checked><span>Запомнить меня</span></label>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script>
             var pathTemplate = './';
@@ -618,6 +709,7 @@
         <script src="js/swiper/swiper-bundle.min.js"></script>
         <script src="js/validation/jquery.validate.min.js"></script>
         <script src="js/validation/messages_ru.js"></script>
+        <script src="js/jquery.cookie.js"></script>
         <script src="js/tools.js"></script>
 
     </body>
