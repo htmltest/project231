@@ -402,6 +402,26 @@ $(document).ready(function() {
         curBlock.find('.faq-menu').html(newMenu);
         curBlock.find('.faq-menu li').eq(0).addClass('active');
         curBlock.find('.faq-tab').eq(0).addClass('active');
+
+        $(window).on('load', function() {
+            var curURL = new URL(window.location.href);
+            if (curURL.searchParams.get('sid') != null) {
+                var curItem = $('.faq-item[data-sid="' + curURL.searchParams.get('sid') + '"]');
+                if (curItem.length == 1) {
+                    curItem.addClass('open');
+                    curItem.find('.faq-item-text').show();
+                    var curTab = curItem.parents().filter('.faq-tab');
+                    if (!curTab.hasClass('active')) {
+                        curBlock.find('.faq-tab.active').removeClass('active');
+                        curTab.addClass('active');
+                        var curIndex = curBlock.find('.faq-tab').index(curTab);
+                        curBlock.find('.faq-menu li.active').removeClass('active');
+                        curBlock.find('.faq-menu li').eq(curIndex).addClass('active');
+                    }
+                    $('html, body').animate({'scrollTop': curItem.offset().top - $('header').height()});
+                }
+            }
+        });
     });
 
     $('.faq-menu li a').click(function(e) {

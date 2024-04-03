@@ -770,7 +770,8 @@ a.main-slots-ctrl-collections:active {background:#0B99C3; border-color:#0B99C3; 
 
 .detail-photos {min-width:585px; max-width:585px}
 .detail-photos-container {position:relative; height:700px; overflow:hidden; border-radius:4px}
-.detail-photos-bg {position:absolute; left:0; top:0; right:0; bottom:0; background:no-repeat center}
+.detail-photos-bg {position:absolute; left:-100px; top:-100px; right:-100px; bottom:-100px; background:no-repeat center; transition:transform 0.2s}
+.detail-photos-container:hover .detail-photos-bg {transform:rotate(15deg)}
 .detail-photos-images {position:absolute; left:0; top:0; right:0; bottom:0}
 .detail-photos-image {position:absolute; left:0; top:0; right:0; bottom:0; opacity:0; transition:opacity 0.2s; display:flex; align-items:center; justify-content:center}
 .detail-photos-image.active {opacity:1}
@@ -1055,6 +1056,10 @@ a.collections-filter-random:hover svg {stroke:#000000}
 .articles-more a {display:flex; align-items:center; justify-content:center; height:54px; border:1px solid rgba(255, 255, 255, 0.4); color:#FFFFFF; border-radius:27px; font-weight:bold; font-size:16px; line-height:13px; text-transform:uppercase; transition:background 0.2s, color 0.2s, border-color 0.2s}
 .articles-more a:hover {background:#13AEDB; border-color:#13AEDB; color:#000000}
 .articles-more a:active {background:#0B99C3; border-color:#0B99C3; color:#000000}
+.articles-more-main {margin:60px 0 0 0}
+.articles-more-main a {display:flex; align-items:center; justify-content:center; height:54px; border:1px solid rgba(255, 255, 255, 0.4); color:#FFFFFF; border-radius:27px; font-weight:bold; font-size:16px; line-height:13px; text-transform:uppercase; transition:background 0.2s, color 0.2s, border-color 0.2s}
+.articles-more-main a:hover {background:#13AEDB; border-color:#13AEDB; color:#000000}
+.articles-more-main a:active {background:#0B99C3; border-color:#0B99C3; color:#000000}
 
 @media (max-width:1215px) {
     .articles {margin:0; display:block}
@@ -1064,6 +1069,8 @@ a.collections-filter-random:hover svg {stroke:#000000}
     .article:nth-child(16n - 7) {margin:32px 0 0 0}
     .articles-more {margin:32px 0 0 0}
     .articles-more a {height:44px; font-size:13px; line-height:10px}
+    .articles-more-main {margin:32px 0 0 0}
+    .articles-more-main a {height:44px; font-size:13px; line-height:10px}
 
     .main .articles {margin:0 -20px; display:flex; position:relative; overflow:auto; flex-wrap:nowrap}
     .main .articles::-webkit-scrollbar-thumb {background:transparent; border-radius:0}
