@@ -897,11 +897,19 @@ $(window).on('load resize scroll', function(e) {
                     $('.main-catalogue .container').css({'opacity': 0});
                     $('.main-bottom-bg').css({'transform': 'rotate(-35deg) translateY(50%)'});
 
-                    $('.main-welcome').css({'transform': 'translateY(-' + (mainEmotionsBeforeCurrent * 120) + 'vh)'});
-                    $('.main-welcome-blisters-4').css({'transform': 'translateY(-' + (mainEmotionsBeforeCurrent * 120) + 'vh)'});
-                    $('.main-welcome-blisters-4-big').css({'transform': 'translateY(-' + (mainEmotionsBeforeCurrent * 120) + 'vh)'});
-                    $('.main-welcome-bg-inner').css({'transform': 'rotate(-' + (75.87 + 27.39 * mainEmotionsBeforeCurrent) + 'deg)'});
-                    $('.main-welcome-emotions').css({'opacity': mainEmotionsBeforeCurrent});
+                    if (mainEmotionsBeforeCurrent < 0.3) {
+                        $('.main-welcome').css({'transform': 'translateY(-' + (mainEmotionsBeforeCurrent * 2 * 120) + 'vh)'});
+                        $('.main-welcome-blisters-4').css({'transform': 'translateY(-' + (mainEmotionsBeforeCurrent * 2 * 120) + 'vh)'});
+                        $('.main-welcome-blisters-4-big').css({'transform': 'translateY(-' + (mainEmotionsBeforeCurrent * 2 * 120) + 'vh)'});
+                        $('.main-welcome-bg-inner').css({'transform': 'rotate(-' + (75.87 + 27.39 * mainEmotionsBeforeCurrent * 2) + 'deg)'});
+                        $('.main-welcome-emotions').css({'opacity': 0});
+                    } else {
+                        $('.main-welcome').css({'transform': 'translateY(-120vh)'});
+                        $('.main-welcome-blisters-4').css({'transform': 'translateY(-120vh)'});
+                        $('.main-welcome-blisters-4-big').css({'transform': 'translateY(-120vh)'});
+                        $('.main-welcome-bg-inner').css({'transform': 'rotate(-103.26deg)'});
+                        $('.main-welcome-emotions').css({'opacity': mainEmotionsBeforeCurrent});
+                    }
                 }
             }
 
@@ -924,8 +932,13 @@ $(window).on('load resize scroll', function(e) {
                     $('.main-catalogue .container').css({'opacity': 0});
                     $('.main-bottom-bg').css({'transform': 'rotate(-35deg) translateY(50%)'});
 
-                    $('.main-welcome-emotions').css({'opacity': 1 - mainTonesBeforeCurrent});
-                    $('.main-welcome-tones').css({'opacity': mainTonesBeforeCurrent});
+                    if (mainTonesBeforeCurrent < 0.5) {
+                        $('.main-welcome-emotions').css({'opacity': 1 - mainTonesBeforeCurrent * 2});
+                        $('.main-welcome-tones').css({'opacity': 0});
+                    } else {
+                        $('.main-welcome-emotions').css({'opacity': 0});
+                        $('.main-welcome-tones').css({'opacity': mainTonesBeforeCurrent});
+                    }
                     $('.main-welcome-bg-inner').css({'transform': 'rotate(-' + (103.26 + 18.61 * mainTonesBeforeCurrent) + 'deg)'});
                 }
             }
@@ -949,8 +962,13 @@ $(window).on('load resize scroll', function(e) {
                     $('.main-catalogue .container').css({'opacity': 0});
                     $('.main-bottom-bg').css({'transform': 'rotate(-35deg) translateY(50%)'});
 
-                    $('.main-welcome-tones').css({'opacity': 1 - mainBrandBeforeCurrent});
-                    $('.main-welcome-brand').css({'opacity': mainBrandBeforeCurrent});
+                    if (mainBrandBeforeCurrent < 0.5) {
+                        $('.main-welcome-tones').css({'opacity': 1 - mainBrandBeforeCurrent * 2});
+                        $('.main-welcome-brand').css({'opacity': 0});
+                    } else {
+                        $('.main-welcome-tones').css({'opacity': 0});
+                        $('.main-welcome-brand').css({'opacity': mainBrandBeforeCurrent});
+                    }
                     $('.main-welcome-bg-inner').css({'transform': 'rotate(-' + (121.87 + 6.6 * mainBrandBeforeCurrent) + 'deg)'});
                 }
             }

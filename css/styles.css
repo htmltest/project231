@@ -303,7 +303,7 @@ header.inverse .header-nav-link:hover svg {stroke:#0B99C3}
 .main-welcome-wrapper {position:fixed; left:0; top:0; right:0; height:100vh; overflow:hidden; z-index:5; will-change:height}
 
 @media (max-width:1215px) {
-    .main-welcome-wrapper {height:auto !important; bottom:0}
+    .main-welcome-wrapper {height:auto !important; bottom:0; transition:height 0.05s}
 }
 
 .main-welcome-bg {position:absolute; left:0; top:0; right:0; height:100vh; background:#070707; pointer-events:none; z-index:1}
@@ -314,6 +314,7 @@ header.inverse .header-nav-link:hover svg {stroke:#0B99C3}
 @media (max-width:1215px) {
     .main-welcome-bg {bottom:0; height:auto}
     .main-welcome-bg::before {width:1437px; height:647px; background:url(../images/main-welcome-bg-mobile.svg) no-repeat center}
+    .main-welcome-bg-inner {transition:transform 0.05s}
 }
 
 .main-section-welcome {height:0}
@@ -336,7 +337,7 @@ header.inverse .header-nav-link:hover svg {stroke:#0B99C3}
 .main.autoslider .main-welcome-3 {transition:opacity 0.5s}
 
 @media (max-width:1215px) {
-    .main-welcome {top:70px; height:auto; position:fixed; bottom:0; font-size:41px; line-height:37px}
+    .main-welcome {top:70px; height:auto; position:fixed; bottom:0; font-size:41px; line-height:37px; transition:transform 0.05s, opacity 0.05s}
     .main-welcome-text-top {padding:30px 0 0 0}
     .main-welcome-text-bottom {padding:0 0 30px 0}
 }
@@ -361,7 +362,7 @@ header.inverse .header-nav-link:hover svg {stroke:#0B99C3}
 .main-welcome-blisters-2 div.main-welcome-blister-2-8 {width:148px; margin:222px 0 0 242px}
 
 @media (max-width:1215px) {
-    .main-welcome-blisters-2 {top:70px; height:auto; bottom:0}
+    .main-welcome-blisters-2 {top:70px; height:auto; bottom:0; transition:transform 0.05s}
     .main-welcome-blisters-2 div.main-welcome-blister-2-1 {width:86px; margin:-195px 0 0 75px}
     .main-welcome-blisters-2 div.main-welcome-blister-2-2 {width:86px; margin:-183px 0 0 -143px}
     .main-welcome-blisters-2 div.main-welcome-blister-2-3 {width:52px; margin:112px 0 0 94px}
@@ -385,7 +386,7 @@ header.inverse .header-nav-link:hover svg {stroke:#0B99C3}
 .main-welcome-blisters-3 div.main-welcome-blister-3-1 {width:436px; margin:-218px 0 0 -218px}
 
 @media (max-width:1215px) {
-    .main-welcome-blisters-3 {top:70px; height:auto; bottom:0}
+    .main-welcome-blisters-3 {top:70px; height:auto; bottom:0; transition:transform 0.05s}
     .main-welcome-blisters-3 div.main-welcome-blister-3-1 {width:215px; margin:-107px 0 0 -107px}
 }
 
@@ -423,7 +424,7 @@ header.inverse .header-nav-link:hover svg {stroke:#0B99C3}
 .main-welcome-blisters-4-big img {display:block; width:100%; border-radius:50%}
 
 @media (max-width:1215px) {
-    .main-welcome-blisters-4 {top:70px; height:auto; bottom:0}
+    .main-welcome-blisters-4 {top:70px; height:auto; bottom:0; transition:transform 0.05s}
     .main-welcome-blisters-4 div.main-welcome-blister-4-01 {width:86px; margin:-56px 0 0 133px}
     .main-welcome-blisters-4 div.main-welcome-blister-4-02 {width:86px; margin:-199px 0 0 -162px}
     .main-welcome-blisters-4 div.main-welcome-blister-4-03 {width:86px; margin:-56px 0 0 -222px}
@@ -435,7 +436,7 @@ header.inverse .header-nav-link:hover svg {stroke:#0B99C3}
     .main-welcome-blisters-4 div.main-welcome-blister-4-09 {width:51px; margin:-297px 0 0 273px}
     .main-welcome-blisters-4 div.main-welcome-blister-4-10 {width:51px; margin:142px 0 0 -7px}
     .main-welcome-blisters-4 div.main-welcome-blister-4-11 {width:86px; margin:76px 0 0 62px}
-    .main-welcome-blisters-4-big {top:70px; height:auto; bottom:0}
+    .main-welcome-blisters-4-big {top:70px; height:auto; bottom:0; transition:transform 0.05s}
     .main-welcome-blisters-4-big div.main-welcome-blister-4-00 {width:215px; margin:-107px 0 0 -107px}
 }
 
