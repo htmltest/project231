@@ -479,8 +479,8 @@ header.inverse .header-nav-link:hover svg {stroke:#0B99C3}
 .main-welcome-tones-text-top {padding:50px 0 0 0; font-weight:bold; font-size:88px; line-height:79px; letter-spacing:-0.01em; text-transform:uppercase; color:rgba(255, 255, 255, 0.5)}
 .main-welcome-tones-text-top span {color:#FFFFFF; display:block}
 .main-welcome-tones-text-middle {margin:32px 0 0 0; max-width:380px; font-weight:bold; font-size:22px; line-height:24px; letter-spacing:-0.02em}
-.main-welcome-tones-img {position:absolute; right:99px; bottom:78px}
-.main-welcome-tones-img img {display:block; height:66.80vh; max-width:none}
+.main-welcome-tones-img {position:absolute; right:62px; bottom:32px}
+.main-welcome-tones-img img {display:block; height:78.19vh; max-width:none}
 
 @media (max-width:1215px) {
     .main-welcome-tones {display:none}
@@ -488,8 +488,8 @@ header.inverse .header-nav-link:hover svg {stroke:#0B99C3}
     .main-welcome-tones-mobile .container {width:100%; position:relative}
     .main-welcome-tones-text-top {padding:20px 0 0 0; font-size:30px; line-height:27px}
     .main-welcome-tones-text-middle {margin:16px 80px 0 0; font-size:14px; line-height:17px}
-    .main-welcome-tones-img {right:25px; bottom:29px}
-    .main-welcome-tones-img img {height:221px}
+    .main-welcome-tones-img {right:11px; bottom:0}
+    .main-welcome-tones-img img {height:227px}
 }
 
 .main-section-brand-before {height:50vh}
@@ -917,7 +917,7 @@ a.collections-filter-random:hover svg {stroke:#000000}
     .collections-social-text {font-size:14px; line-height:18px}
 }
 
-.cases-title {margin:128px 0 0 0; font-weight:bold; font-size:48px; line-height:38px; letter-spacing:-0.01em; text-transform:uppercase}
+.cases-title {margin:128px 0 0 0; font-weight:bold; font-size:48px; line-height:48px; letter-spacing:-0.01em; text-transform:uppercase}
 .cases-list {margin:46px -6px 0 -6px; display:flex; flex-wrap:wrap}
 .cases-item {min-width:25%; max-width:25%; padding:12px 6px 0 6px}
 .cases-item:nth-child(n + 9) {display:none}

@@ -194,6 +194,7 @@ var collectionsData = [
     },
     {
         'title' : 'Pin-up',
+        'new'   : true,
         'icon'  : 'files/blisters/pin-up/preview/01.png',
         'list'  : [
             ['files/blisters/pin-up/preview/01.png', 'files/blisters/pin-up/01.png'],
@@ -296,6 +297,7 @@ var collectionsData = [
     },
     {
         'title' : 'Webcam',
+        'new'   : true,
         'icon'  : 'files/blisters/webcam/preview/01.png',
         'list'  : [
             ['files/blisters/webcam/preview/01.png', 'files/blisters/webcam/01.png'],
