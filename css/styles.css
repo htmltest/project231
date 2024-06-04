@@ -450,7 +450,7 @@ header.inverse .header-nav-link:hover svg {stroke:#0B99C3}
 .main-welcome-emotions {position:absolute; left:0; top:100px; right:0; height:calc(100vh - 100px); display:flex; opacity:0; z-index:6; will-change:opacity}
 .main-welcome-emotions-mobile {display:none}
 .main-welcome-emotions .container {width:100%; position:relative}
-.main-welcome-emotions-text-top {padding:50px 0 0 0; font-weight:bold; font-size:88px; line-height:79px; letter-spacing:-0.01em; text-transform:uppercase; color:rgba(255, 255, 255, 0.5)}
+.main-welcome-emotions-text-top {padding:50px 0 0 0; font-weight:bold; font-size:88px; line-height:83px; letter-spacing:-0.01em; text-transform:uppercase; color:rgba(255, 255, 255, 0.5)}
 .main-welcome-emotions-text-top span {color:#FFFFFF; display:block}
 .main-welcome-emotions-text-middle {margin:32px 0 0 0; max-width:380px; font-weight:bold; font-size:22px; line-height:24px; letter-spacing:-0.02em}
 .main-welcome-emotions-img {position:absolute; right:10px; bottom:8px; width:40vw}
@@ -460,7 +460,7 @@ header.inverse .header-nav-link:hover svg {stroke:#0B99C3}
     .main-welcome-emotions {display:none}
     .main-welcome-emotions-mobile {display:flex; position:relative; margin:-75vh 0 0 0; left:auto; top:auto; right:auto; bottom:auto; height:370px; font-size:30px; line-height:27px; transform:none; opacity:1; background:url(../images/main-welcome-emotions-bg.svg) no-repeat center; background-size:cover; border-radius:4px}
     .main-welcome-emotions-mobile .container {width:100%; position:relative}
-    .main-welcome-emotions-text-top {padding:20px 0 0 0; font-size:30px; line-height:27px}
+    .main-welcome-emotions-text-top {padding:20px 0 0 0; font-size:30px; line-height:30px}
     .main-welcome-emotions-text-middle {margin:12px 80px 0 0; font-size:14px; line-height:17px}
     .main-welcome-emotions-img {width:238px; right:15px; bottom:4px}
 }
@@ -476,17 +476,17 @@ header.inverse .header-nav-link:hover svg {stroke:#0B99C3}
 .main-welcome-tones {position:absolute; left:0; top:100px; right:0; height:calc(100vh - 100px); display:flex; opacity:0; z-index:6; will-change:opacity}
 .main-welcome-tones-mobile {display:none}
 .main-welcome-tones .container {width:100%; position:relative}
-.main-welcome-tones-text-top {padding:50px 0 0 0; font-weight:bold; font-size:88px; line-height:79px; letter-spacing:-0.01em; text-transform:uppercase; color:rgba(255, 255, 255, 0.5)}
+.main-welcome-tones-text-top {padding:50px 0 0 0; font-weight:bold; font-size:88px; line-height:83px; letter-spacing:-0.01em; text-transform:uppercase; color:rgba(255, 255, 255, 0.5)}
 .main-welcome-tones-text-top span {color:#FFFFFF; display:block}
 .main-welcome-tones-text-middle {margin:32px 0 0 0; max-width:380px; font-weight:bold; font-size:22px; line-height:24px; letter-spacing:-0.02em}
 .main-welcome-tones-img {position:absolute; right:62px; bottom:32px}
-.main-welcome-tones-img img {display:block; height:78.19vh; max-width:none}
+.main-welcome-tones-img img {display:block; height:78.19vh; max-width:none; width:auto}
 
 @media (max-width:1215px) {
     .main-welcome-tones {display:none}
     .main-welcome-tones-mobile {display:flex; position:relative; margin:16px 0 0 0; left:auto; top:auto; right:auto; bottom:auto; height:370px; font-size:30px; line-height:27px; transform:none; opacity:1; background:url(../images/main-welcome-tones-bg.svg) no-repeat center; background-size:cover; border-radius:4px}
     .main-welcome-tones-mobile .container {width:100%; position:relative}
-    .main-welcome-tones-text-top {padding:20px 0 0 0; font-size:30px; line-height:27px}
+    .main-welcome-tones-text-top {padding:20px 0 0 0; font-size:30px; line-height:30px}
     .main-welcome-tones-text-middle {margin:16px 80px 0 0; font-size:14px; line-height:17px}
     .main-welcome-tones-img {right:11px; bottom:0}
     .main-welcome-tones-img img {height:227px}
@@ -503,17 +503,17 @@ header.inverse .header-nav-link:hover svg {stroke:#0B99C3}
 .main-welcome-brand {position:absolute; left:0; top:100px; right:0; height:calc(100vh - 100px); display:flex; opacity:0; z-index:6; will-change:opacity}
 .main-welcome-brand-mobile {display:none}
 .main-welcome-brand .container {width:100%; position:relative}
-.main-welcome-brand-text-top {padding:50px 0 0 0; font-weight:bold; font-size:88px; line-height:79px; letter-spacing:-0.01em; text-transform:uppercase; color:rgba(255, 255, 255, 0.5)}
+.main-welcome-brand-text-top {padding:50px 0 0 0; font-weight:bold; font-size:88px; line-height:83px; letter-spacing:-0.01em; text-transform:uppercase; color:rgba(255, 255, 255, 0.5)}
 .main-welcome-brand-text-top span {color:#FFFFFF; display:block}
 .main-welcome-brand-text-middle {margin:32px 0 0 0; max-width:380px; font-weight:bold; font-size:22px; line-height:24px; letter-spacing:-0.02em}
 .main-welcome-brand-img {position:absolute; right:-52px; bottom:30px}
-.main-welcome-brand-img img {display:block; height:74.58vh; max-width:none}
+.main-welcome-brand-img img {display:block; height:74.58vh; max-width:none; width:auto}
 
 @media (max-width:1215px) {
     .main-welcome-brand {display:none}
     .main-welcome-brand-mobile {display:flex; position:relative; margin:16px 0 0 0; left:auto; top:auto; right:auto; bottom:auto; height:370px; font-size:30px; line-height:27px; transform:none; opacity:1; background:url(../images/main-welcome-brand-bg.svg) no-repeat center; background-size:cover; border-radius:4px}
     .main-welcome-brand-mobile .container {width:100%; position:relative}
-    .main-welcome-brand-text-top {padding:20px 0 0 0; font-size:30px; line-height:27px}
+    .main-welcome-brand-text-top {padding:20px 0 0 0; font-size:30px; line-height:30px}
     .main-welcome-brand-text-middle {margin:16px 80px 0 0; font-size:14px; line-height:17px}
     .main-welcome-brand-img {right:-12px; bottom:12px}
     .main-welcome-brand-img img {height:230px}
@@ -786,7 +786,7 @@ a.main-slots-ctrl-collections:active {background:#0B99C3; border-color:#0B99C3; 
 .detail-descr {margin:32px 0 0 0; line-height:23px; font-weight:500; color:rgba(255, 255, 255, 0.8)}
 .detail-params {margin:16px 29px 0 0}
 .detail-param {margin:4px 0 0 0; display:flex; align-items:center; font-size:14px; line-height:18px; color:rgba(255, 255, 255, 0.8); white-space:nowrap}
-.detail-param-sep {flex-grow:1; margin:0 4px; height:1px; border-top:1px dashed rgba(255, 255, 255, 0.4)}
+.detail-param-sep {flex-grow:1; margin:3px 4px 0 4px; height:1px; border-top:1px dashed rgba(255, 255, 255, 0.4)}
 .detail-count {display:flex; align-items:center; margin:32px 0 0 0; font-weight:500; font-size:16px; line-height:21px}
 .detail-count-title {color:rgba(255, 255, 255, 0.5); margin:0 12px 0 0}
 .detail-count a {display:flex; margin:0 0 0 8px; width:40px; height:40px; font-size:18px; line-height:23px; align-items:center; justify-content:center; border:1px solid #2A2A2A; border-radius:4px; color:#FFFFFF; transition:color 0.2s, border-color 0.2s, border-width 0.2s}
