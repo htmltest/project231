@@ -707,7 +707,7 @@ a.main-slots-ctrl-collections:active {background:#0B99C3; border-color:#0B99C3; 
 .catalogue-item-bg {position:absolute; left:-100px; top:-100px; right:-100px; bottom:-100px; background:no-repeat center; transition:transform 0.2s}
 .catalogue-item a:hover .catalogue-item-bg {transform:rotate(15deg)}
 .catalogue-item-preview {height:386px; display:flex; align-items:center; justify-content:center; position:relative}
-.catalogue-item-preview img {max-height:100%; transition:transform 0.2s}
+.catalogue-item-preview img {max-height:100%; transition:transform 0.2s; width:auto}
 .catalogue-item a:hover .catalogue-item-preview img {transform:scale(1.05)}
 .catalogue-item-text {margin:16px 24px 0 24px; position:relative}
 .catalogue-item-title {font-weight:bold; font-size:24px; line-height:26px; text-transform:uppercase; color:#FFFFFF; display:flex; align-items:center}
