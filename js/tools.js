@@ -325,6 +325,20 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('.catalogue-item-count-size').click(function() {
+        var curCount = $(this);
+        var curItem = curCount.parents().filter('.catalogue-item');
+        if (!curCount.hasClass('active')) {
+            curItem.find('.catalogue-item-count-size').removeClass('active');
+            curCount.addClass('active');
+            var curIndex = curItem.find('.catalogue-item-count-size').index(curCount);
+            curItem.find('.catalogue-item-preview-image.active').removeClass('active');
+            curItem.find('.catalogue-item-preview-image').eq(curIndex).addClass('active');
+
+        }
+        return false;
+    });
+
     $('.detail-count a').click(function(e) {
         var curItem = $(this);
         if (!curItem.hasClass('active')) {
