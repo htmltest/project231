@@ -440,7 +440,7 @@ header.inverse .header-nav-link:hover svg {stroke:#0B99C3}
     .main-welcome-blisters-4-big div.main-welcome-blister-4-00 {width:215px; margin:-107px 0 0 -107px}
 }
 
-.main-section-emotions-before {height:50vh}
+.main-section-emotions-before {height:100vh}
 .main-section-emotions {height:50vh}
 
 @media (max-width:1215px) {

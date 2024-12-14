@@ -771,7 +771,7 @@ $(window).on('load resize scroll', function(e) {
                 if (windowWidth < 1216) {
                     newScroll = $('.main-welcome-emotions-mobile').offset().top - $('header').height();
                 }
-                $('html, body').animate({'scrollTop': newScroll}, 2000 / (curMainStep + 1), function() {
+                $('html, body').animate({'scrollTop': newScroll}, 4000 / (curMainStep + 1), function() {
                     isAutoSroll = false;
                 });
             }
@@ -911,19 +911,11 @@ $(window).on('load resize scroll', function(e) {
                     $('.main-catalogue .container').css({'opacity': 0});
                     $('.main-bottom-bg').css({'transform': 'rotate(-35deg) translateY(50%)'});
 
-                    if (mainEmotionsBeforeCurrent < 0.3) {
-                        $('.main-welcome').css({'transform': 'translateY(-' + (mainEmotionsBeforeCurrent * 2 * 120) + 'vh)'});
-                        $('.main-welcome-blisters-4').css({'transform': 'translateY(-' + (mainEmotionsBeforeCurrent * 2 * 120) + 'vh)'});
-                        $('.main-welcome-blisters-4-big').css({'transform': 'translateY(-' + (mainEmotionsBeforeCurrent * 2 * 120) + 'vh)'});
-                        $('.main-welcome-bg-inner').css({'transform': 'rotate(-' + (75.87 + 27.39 * mainEmotionsBeforeCurrent * 2) + 'deg)'});
-                        $('.main-welcome-emotions').css({'opacity': 0});
-                    } else {
-                        $('.main-welcome').css({'transform': 'translateY(-120vh)'});
-                        $('.main-welcome-blisters-4').css({'transform': 'translateY(-120vh)'});
-                        $('.main-welcome-blisters-4-big').css({'transform': 'translateY(-120vh)'});
-                        $('.main-welcome-bg-inner').css({'transform': 'rotate(-103.26deg)'});
-                        $('.main-welcome-emotions').css({'opacity': mainEmotionsBeforeCurrent});
-                    }
+                    $('.main-welcome').css({'transform': 'translateY(-' + (mainEmotionsBeforeCurrent * 2 * 120) + 'vh)'});
+                    $('.main-welcome-blisters-4').css({'transform': 'translateY(-' + (mainEmotionsBeforeCurrent * 2 * 120) + 'vh)'});
+                    $('.main-welcome-blisters-4-big').css({'transform': 'translateY(-' + (mainEmotionsBeforeCurrent * 2 * 120) + 'vh)'});
+                    $('.main-welcome-bg-inner').css({'transform': 'rotate(-' + (75.87 + 27.39 * mainEmotionsBeforeCurrent) + 'deg)'});
+                    $('.main-welcome-emotions').css({'opacity': mainEmotionsBeforeCurrent});
                 }
             }
 
